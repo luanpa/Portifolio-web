@@ -1,0 +1,156 @@
+.portifolio{
+    padding: 5rem 6rem 3rem 6rem;
+    overflow: hidden;
+}
+
+.port-tittle{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.port-tittle h2{
+    padding-bottom: 20px;
+    font-weight: 900;
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-transform: uppercase;
+}
+
+.port-tittle h2 span{
+    color: #10c9c3;
+}
+
+.port-tittle p{
+    width: 50%;
+    margin: auto;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.port-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.port-item{
+    position: relative;
+}
+
+.port-item img{
+    width: 50%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background: rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    transition: all .5s ease;
+    cursor: pointer;
+
+
+}
+
+.overlay .overlay-inner{
+    position: absolute;
+    top: 35%;
+    width: 20%;
+    text-align: center;
+    
+}
+
+.port-item a:hover .overlay{
+    opacity: 1;
+}
+
+.overlay .overlay-inner h4{
+    color: #ffff;
+    transition: all .5s;
+    transform:  translateY(-25px);
+    text-transform: capitalize;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.overlay .overlay-inner p{
+    color: #fff;
+    transition: all .5s;
+    transform: translateY(30px);
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.port-item:hover .overlay .overlay-inner h4{
+    transform: translateY(0);
+}
+
+.port-item:hover .overlay .overlay-inner p{
+    transform: translateY(0);
+}
+
+.nav-list{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.nav-list li{
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.nav-list li a{
+    cursor: pointer;
+    color: #ffff;
+    background-color: #2cbdb8;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    border-radius: 25px;
+    box-shadow: 0px 3px 27px -3px rgb(0 0 0 / 20%);
+}
+
+@media screen and (max-width:900px){
+      .port-tittle h2{
+         font-size: 40px;
+      }
+      .port-tittle p{
+        width: 80%;
+      }
+      .nav-list li{
+        padding-bottom: 30px;
+      }    
+      .port-row{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+}
+
+@media screen and(max-width:768) {
+    .portifolio{
+        padding: 7rem 2rem 3rem 2rem;
+        overflow: hidden;
+    }
+    .port-tittle h2{
+        font-size: 35px;
+    }
+    .port-tittle p{
+        width: 100%;
+    }
+    .port-row{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .nav-list{
+        padding-bottom: 30px;
+    }
+}

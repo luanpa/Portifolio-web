@@ -1,0 +1,115 @@
+.services{
+    height: 100%;
+    padding: 2rem 4rem 0 4rem;
+}
+
+.ser-row{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.ser-col{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.sigle-services{
+    padding: 30px 20px;
+    text-align: center;
+    border: 1px solid #C1C1C1;
+    margin-bottom: 80px;
+}
+
+.title{
+    width: 45%;
+}
+
+.title h2{
+    font-family: 'Rufina',serif;
+    font-size: 48px;
+    display: block;
+    color: white;
+    font-weight: 600;
+}
+
+.services-content{
+    color: #dfdfdf;
+    line-height: 1.8;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.services-content p{
+    font-size: 15px;
+    color: #dfdfdf;
+}
+
+.services-content h2{
+    font-weight: 600;
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+.icon-area{
+    position: relative;
+    top: -45%;
+    left: 0;
+    right: 0;
+    padding-top: 5px;
+    background: #2cbdb8;
+    width: 100px;
+    height: 45px;
+    margin: 0 auto;
+    display: table;
+
+}
+
+.icon-area i { 
+    font-size: 30px;
+    text-align: center;
+    color: #FFFF;
+
+}
+
+.icon-area::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -30px;
+    border-style: solid;
+    border-width: 0 50px 30px;
+    border-color: transparent transparent #2cbdb8 transparent;
+}
+
+.icon-area::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    border-style: solid;
+    border-width: 10px 50px;
+    border-color: #2cbdb8 transparent transparent transparent;
+}
+
+@media screen and (max-width:768) {
+    .services{
+        height: 100%;
+        padding: 1rem 1rem 0 1rem;
+    }
+    .title{
+         width: 100%;
+    }
+    .ser-row{
+        margin-top: 5rem;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .icon-area::after{
+        bottom: -29px;
+    }
+    .icon-area::before{
+        top: -29;
+    }
+}

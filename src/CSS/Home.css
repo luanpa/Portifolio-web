@@ -1,0 +1,156 @@
+.home{
+    padding-top: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.text{
+    width: 50%;
+}
+
+.text p{
+    color: white;
+    margin-top: 15px;
+    font-family: "Poppins", sans-serif;
+}
+
+.text h3{
+    color: white;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.wrapper{
+    margin-top: 15px;
+    display: flex;
+    color: #2cbdb8;
+}
+
+.fixed-text h2{
+    font-family: "Poppins", sans-serif;
+    font-size: 45px;
+    color: white;
+}
+
+.moving-text{
+    margin-left: 12px;
+    height: 65px;
+    line-height: 65px;
+    overflow: hidden;
+}
+
+.moving-text li{
+    position: relative;
+    top: 0;
+    animation: move 6s steps(3) infinite;
+}
+@keyframes move {
+    100%{
+        top: -195px;
+    }
+}
+
+.movin-text li h2{
+    font-size: 45px;
+    color: #2cbdb8;
+}
+.moving-text li h2::after{
+   content: "";
+   position: absolute;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background: #1b1b1b;
+   padding: 50px;
+   border-left: 2px solid white;
+   animation: type 2s steps(12) infinite;
+
+}
+
+@keyframes type {
+    100%{
+        left: 100%;
+        margin: 0 -35 0 35px;
+    }
+}
+.social{
+    margin-top: 30px;
+}
+.social a i{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 12px;
+    border-radius: 50%;
+    background: #2cbdb8;
+    color: #ffff;
+    margin: 0 5px 0 0;
+}
+/* .img{
+
+      max-width:50px;
+    max-height:50px;
+    width: 50px;
+height: 50px;
+    
+} */
+@media screen and (max-width:1024px){
+.home{
+    height: 100vh;
+    padding-top: 2rem;
+}
+.img{
+    display: none;
+}
+.text{
+    margin: 0;
+    width: 90%;
+    padding: 30px;
+}
+.movin-text li h2{
+    font-size: 35px;
+}
+.movin-text{
+    height: 50px;
+    line-height: 50px;
+}
+.fixed-text h2{
+    font-size: 35px;
+}
+@keyframes move {
+    100%{
+        top:145px;
+    }
+ }
+}
+
+@media screen and (max-width:500px){
+    @keyframes move {
+        100%{
+            top: -147px;
+        }
+    }
+}
+
+@media screen and (width:354px) {
+    .fixed-text h2{
+          font-size: 30px;  
+    }
+    .movin-text li h2{
+        font-size: 30px;
+    }
+    .movin-text{
+            height: 45px;
+            line-height: 45px;
+    }
+    .text{
+        padding: 10px;
+    }
+    @keyframes move {
+        100%{
+            top: -133px;
+        }
+    }
+}
