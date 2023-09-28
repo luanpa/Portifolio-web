@@ -8,7 +8,7 @@ const Menu = [
     },
     {
         id: 2,
-        image:"Imgportifolio/fotoum.jpg",
+        image:"Imgportifolio/IMG3.jpeg",
         heading:"Portifolio",
         paragrapgh:"text2",
         category:"text",

@@ -32,7 +32,7 @@ const About = () => {
                       <div className="col"> <p>Email: <span>luantrabalho49@gmail.com</span></p></div>
                       <div className="col"> <p>Celular: <span>(32)988012724</span></p></div>
                       <div className="col"> <p>Guthub: <span>https://github.com/luanpa</span></p></div>
-                
+                      <div className="col"> <p>Cidade: <span>Juiz De Fora</span></p></div>
                         
                     </div>
                 </div>

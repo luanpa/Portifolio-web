@@ -14,7 +14,7 @@ const Resume = () => {
      <section className='resume'>
       
       <div className="main-title">
-        <h2>Minha trajetória</h2>
+        <h2>Minha Trajetória</h2>
       </div>
         
         <div className="res-data">
@@ -30,14 +30,15 @@ const Resume = () => {
                 <li>
                
                <div data-aos = "fade-right" className="content">
-                <span>Cursando Engenharia de software(Unopar)</span>
+                <span>Cursando Engenharia de Software(Unopar)</span>
                </div>
 
                 </li> 
-                
-                
-                </ul>
+            
+            </ul>
             </div>
+         {/* aqui aonde vão os certificado */}
+         
         </div>
       
      </section>

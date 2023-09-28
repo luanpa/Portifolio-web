@@ -1,5 +1,5 @@
 import React,{Fragment}from 'react'
-import user from "../Imagens/foto1.png"
+import user from "../Imagens/foto3.png"
 import "../CSS/Home.css"
 import Navbar from './Navbar'
 const Home = () => {
@@ -22,11 +22,14 @@ const Home = () => {
             </div>
         </div>
          <p>•🧠 Formado em  Análise e Desenvolvimento</p>
-         <p>•🧠 Cursando Engenharia de software</p>
+         <p>•🧠 Cursando Engenharia de Software</p>
 
          <div className="social">
-            <a href="https://github.com/luanpa"><i class="fa fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/luan-batista-9223a41a1/"><i class="fa fa-linkedin"></i></a>            
+            <a href="https://github.com/luanpa" target="_blank" and rel="noopener noreferrer"><i class="fa fa-github" ></i></a>
+            <a href="https://www.linkedin.com/in/luan-batista-9223a41a1/" target="_blank" and rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
+            <a href="https://drive.google.com/file/d/1-cR7E8xZ-TlnaIW9EQ0c-umw-BGKMy5K/view" target="_blank" and rel="noopener noreferrer"><i class="fa-brands fa-google-drive"></i></a>            
+         </div>
+         <div className="text">
          </div>
        </div>
 
@@ -34,7 +37,7 @@ const Home = () => {
         <img src={user} alt="user" />
 
        </div>
-
+     
 
       </section>
 

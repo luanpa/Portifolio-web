@@ -4,7 +4,7 @@ import "../CSS/Portifolio.css"
 import Navbar from './Navbar'
 import user from "../Imgportifolio/fotodois.jpg"
 import use1 from "../Imgportifolio/fotoum.jpg"
-
+import use2 from "../Imgportifolio/IMG3.jpeg"
 const Portifolio = () => {
     const[items, setItems] = useState(Menu)
   return (
@@ -16,18 +16,19 @@ const Portifolio = () => {
 
          
          <div className="port-tittle">
-            <h2> Meus<span>Trabalhos</span></h2>
+            <h2> Meus <span>Trabalhos</span></h2>
             <p>Outros estão No github</p>
          </div>
               
           <div className="nav">
                <ul className='nav-list'>
                      <li>
-                        <a href="#">FrontEnd</a>
+                        <a href="#"> FrontEnd</a>
                      </li>
-                     <li>
+                     <span> <li>
                         <a href="#">Full Stack(em breve)</a>
-                     </li>
+                     </li></span>
+                     
 
                </ul>
                         
@@ -67,7 +68,7 @@ const Portifolio = () => {
                             <div className='port-col'>
                             <div className='port-item'>
                                 <a href="#">
-                                   <img src={user} alt="im" />
+                                   <img src={use2} alt="im" />
                                    <div className="overlay">
                                     <div className='overlay-inner'>
                                         <h4>Portifolio</h4>
